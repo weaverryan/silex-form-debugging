@@ -26,8 +26,8 @@ $app->match('/', function (Application $app, Request $r) {
         ->getForm();
 
     $form->handleRequest($r);
-    var_dump($form['testing']['first']->getNormData());
-        var_dump($form['testing']['second']->getNormData());die;
+//    var_dump($form['testing']['first']->getNormData());
+  //      var_dump($form['testing']['second']->getNormData());die;
     if ($form->isValid()) {
         $val = $form['testing']->getData();
         if (null === $val) {
